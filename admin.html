@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/mystyle.css">
+        <title>Retas | Beranda</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Plataforma que te vai permitir melhorar o dia de um teu amigo ou surpreender a tua cara metade">
+        <meta name="author" content="Afonso Pinto, André Lobo e Rogério Pereira">
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM71qDAR8BBLQ_NoBHWwTDKilNV_DuHvY&libraries=places&callback=initMap"
+                async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM71qDAR8BBLQ_NoBHWwTDKilNV_DuHvY&libraries=places&callback=initMap" async defer></script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM71qDAR8BBLQ_NoBHWwTDKilNV_DuHvY&callback=initMap">
+        </script>
+
+        <script type="text/javascript" src= "mapa.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="titleB">Kirim</span> Teman</h1>
+                </div>
+                <a href="home.html"> <img id="logo" src="./images/logo.png"></a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li class="current"><a href="beranda.html">beranda</a></li>
+                        <li><a href="about.html">about</a>
+                        <li class="Logout"><a href="index.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="white">
+                <form method="get" action="/search" id="search">
+                    <input name="q" type="text" size="40" placeholder="Search..." />
+                </form>
+            </div>
+        </header>
+
+        <section id="newsletter">
+            <div class="container">
+
+                <h1>Selamat Datang</h1>
+                <form>
+                    <input type="email" placeholder="Insira o email...">
+                    <button type="submite" class="button_1">Subescreve</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="section2">
+            <button id="data" class="action-button shadow animate yellow" value="Ver Encomendas" onclick="location.href='/lista';">Ver Encomendas</button>
+            <h1 class="title">
+                Morada</h1>
+
+            <input id="pac-input" type="text"
+                   placeholder="Enter a location">
+            <form method="post" action="/enc"> <h1 class="title">Loja/Restaurante</h1>
+                <select id="lojres" class="select-style" name="loja">
+                    <option></option>
+                </select>
+                <h1 class="title">Produto</h1>
+
+                <select id="prod" name="produto">
+                    <option value="Gomas">Gomas</option>
+                    <option value="Cerveja">Cerveja</option>
+                    <option value="Flores">Flores</option>
+                    <option value="Bolo">Bolo</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Fruta">Fruta</option>
+                    <option value="Refrigerante">Refrigerante</option>
+                </select>
+
+
+
+                <p></p><button id="submeter" class="action-button shadow animate green" value="Submeter" >Submeter</button></form>
+            <input type="button" id="rota" class="action-button shadow animate blue" value="Ver Rota">                
+            <button id="cancelar" class="action-button shadow animate red" value="Cancelar" onclick="location.href='home.html';">Cancelar</button>
+
+
+        </section>
+        <hr>
+
+        <div id="map"></div>
+        <div id="infowindow-content">
+            <img src="" width="16" height="16" id="place-icon">
+            <span id="place-name"  class="title"></span><br>
+            <span id="place-address"></span></div>
+
+        <footer>
+            <p>Fitraekaputra, Copyright &copy; 2019</p>
+
+        </footer>
+
+    </body>
+</html> 

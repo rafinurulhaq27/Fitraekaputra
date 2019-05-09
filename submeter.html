@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/mystyle.css">
+        <title>SITAF | Submetido</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Plataforma que te vai permitir melhorar o dia de um teu amigo ou surpreender a tua cara metade">
+        <meta name="author" content="Afonso Pinto, André Lobo e Rogério Pereira">
+
+
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="titleB">Send</span> it to a friend</h1>
+                </div>
+                <a href="home.html"> <img id="logo" src="./images/logo.png"></a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li class="current"><a href="encomenda.html">Encomendas</a></li>
+                        <li><a href="sobre.html">Sobre</a>
+                        <li class="Logout"><a href="index.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="white">
+                <form method="get" action="/search" id="search">
+                    <input name="q" type="text" size="40" placeholder="Search..." />
+                </form>
+            </div>
+        </header>
+
+        <section id="newsletter">
+            <div class="container">
+
+                <h1>Sedikit namun memiliki arti</h1>
+                <form>
+                    <input type="email" placeholder="Insira o email...">
+                    <button type="submite" class="button_1">Subescreve</button>
+                </form>
+            </div>
+        </section>
+        <section id="sub">
+            <h1>Encomeda Submetida!</h1></section>
+            <section>
+            <button id="rota"  value="Voltar" onclick="location.href='encomenda.html';">Voltar</button>
+            <button id="rota"  value="Ver Encomendas" onclick="location.href='/lista';">Ver Encomendas</button>
+        </section>
+        <footer>
+            <p>Send it to a friend, Copyright &copy; 2017</p>
+
+        </footer>
+
+    </body>
